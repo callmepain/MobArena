@@ -1,0 +1,27 @@
+name: MobArena
+version: 1.0.0
+description: MobArena
+author: CallmePain
+website: http://www.callmepain.de
+
+main: de.CallmePain.MobArena.MobArena
+depend: [bPermissions]
+
+commands: 
+  MobArena:
+    description: Spleef game command
+    usage: /<command>
+    aliases: [MA]
+    
+permissions:
+    MA.*:
+        description: Give access to all spleef commands
+        children:
+            MA.join: true
+            MA.admin: true
+    MA.join:
+        description: Give access to all spleef commands
+        default: op
+    MA.admin:
+        description: Give access to all spleef commands
+        default: op
